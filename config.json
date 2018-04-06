@@ -1,0 +1,9 @@
+{
+  "name": "OERu - based on Sparse - v3.1",
+  "author": "OERu (adapting Mautic-generated theme)",
+  "authorUrl": "https://oeru.org",
+  "features": [
+    "page",
+    "email"
+  ]
+}
