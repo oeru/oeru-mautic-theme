@@ -1,27 +1,40 @@
 {% extends ":"~template~":base.html.twig" %}
 
 {% block content %}
-    <div data-section-wrapper="1" style="border-bottom: 3px solid #3bcdc3;">
+    <style type="text/css">
+        body {
+            font-family: 'Open Sans', Verdana, Arial, sans-serif;
+            color: #555555;
+            height: 100% !important; margin: 0 !important;
+            padding: 0 !important; width: 100% !important;
+            -webkit-font-smoothing: antialiased !important;
+            font-smoothing: antialiased !important;
+        }
+        .light { color: #cccccc !important; }
+        .dark { color: #333333 !important; }
+    </style>
+    <div data-section-wrapper="1" style="border-bottom: 1px solid #aaaaaa;">
         <center>
             <table data-section="1" cellspacing="0" cellpadding="0" width="530" class="w320">
                 <tr>
                     <td valign="top" style="text-align:left;" class="mobile-center" data-slot-container="1">
                         <div data-slot="image">
-                            <img width="250" height="62" src="{{ getAssetUrl('themes/'~template~'/img/logo.gif', null, null, true) }}">
+                            <img width="173" height="64" src="{{ getAssetUrl('themes/'~template~'/assets/oeru-logo.png', null, null, true) }}">
                         </div>
                     </td>
                 </tr>
             </table>
         </center>
     </div>
-    <div data-section-wrapper="1"  background="{{ getAssetUrl('themes/'~template~'/img/bg.gif', null, null, true) }}" bgcolor="#64594b" valign="top" style="background: url({{ getAssetUrl('themes/'~template~'/img/bg.gif', null, null, true) }}) no-repeat center; background-color: #64594b; background-position: center;">
+    <div data-section-wrapper="1"  background="{{ getAssetUrl('themes/'~template~'/assets/stadium-faded.png', null, null, true) }}" bgcolor="#55555" valign="top"
+        style="background: url({{ getAssetUrl('themes/'~template~'/assets/stadium-faded.png', null, null, true) }}) no-repeat center; background-color: #555555; background-position: center; border-bottom: 1px solid #aaaaaa;">
         <center>
-            <table data-section="1" cellspacing="0" cellpadding="0" width="530" height="303" class="w320">
+            <table data-section="1" cellspacing="0" cellpadding="0" width="530" height="302" class="w320">
                 <tr>
-                    <td valign="middle" style="vertical-align:middle; padding-right: 15px; padding-left: 15px; text-align:left;" class="mobile-center" height="303" data-slot-container="1">
-                        <div data-slot="text">
-                            <h1 style="color: #ffffff">WE REALLY MISS YOU!</h1><br>
-                            <h2 style="color: #ffffff">Like.. really, really! Please give us another chance.</h2>
+                    <td valign="top" style="vertical-align:top; padding-right: 15px; padding-left: 15px; text-align:left;" class="mobile-center" height="302" data-slot-container="1">
+                        <div class="light" data-slot="text">
+                            <h1>Title</h1>
+                            <h2>Byline, with some more words</h2>
                         </div>
                     </td>
                 </tr>
@@ -96,42 +109,22 @@
         <center>
             <table data-section="1" cellspacing="0" cellpadding="0" width="530" class="w320">
                 <tr>
-                    <td>
-                        <table cellspacing="0" cellpadding="30" width="100%">
-                            <tr>
-                                <td style="text-align:center;" data-slot-container="1">
-                                    <div data-slot="text">
-                                        <a href="#">
-                                            <img width="61" height="51" src="{{ getAssetUrl('themes/'~template~'/img/twitter.gif', null, null, true) }}" alt="twitter" />
-                                        </a>
-                                        <a href="#">
-                                            <img width="61" height="51" src="{{ getAssetUrl('themes/'~template~'/img/gplus.gif', null, null, true) }}" alt="google plus" />
-                                        </a>
-                                        <a href="#">
-                                            <img width="61" height="51" src="{{ getAssetUrl('themes/'~template~'/img/facebook.gif', null, null, true) }}" alt="facebook" />
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
+                    <td data-slot-container="1">
+                        <div data-slot="text">
+                            <table cellspacing="0" cellpadding="20" width="100%">
+                                <tr>
+                                    <td style="padding: 20px 0px; width: 33%; text-align: left;"><a href="https://oeru.org/contact-us/" style="font-family: 'Open Sans', Verdana, Arial, sans-serif; font-size:10px; line-height:20px; color:#212121; text-transform: uppercase; text-decoration:underline;" target="_blank">Contact Us</a></td>
+                                    <td style="padding: 20px 0px; width: 34%; text-align: center;">
+                                        <a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license" title="The content in this email is copyright the OER Foundation, and is licenced under CC-By-SA 4.0 or later."><img alt="Creative Commons License" src="{{ getAssetUrl('themes/'~template~'/assets/cc-by.png', null, null, true) }}" style="border-width: 0px;" class="fr-fic fr-dii"></a>
+                                    </td>
+                                    <td style="padding: 20px 0px; width: 33%; text-align: right;"><a href="{unsubscribe_url}" style="font-family: 'Open Sans', Verdana, Arial, sans-serif; font-size:10px; line-height:20px; color:#212121; text-transform: uppercase; text-decoration:underline;" target="_blank">Unsubscribe</a></td>
+                                </tr>
+                            </table>
+                        </div>
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        <center>
-                            <table style="margin:0 auto;" cellspacing="0" cellpadding="5" width="100%">
-                                <tr>
-                                    <td style="text-align:center; margin:0 auto;" width="100%" data-slot-container="1">
-                                        <div data-slot="image">
-                                            <a href="#" style="text-align:center;">
-                                                <img style="margin:0 auto;" width="123" height="24" src="{{ getAssetUrl('themes/'~template~'/img/logo-footer.gif', null, null, true) }}" alt="logo link" />
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </center>
-                    </td>
+                    <td height="40" style="font-size: 40px; line-height: 40px;">&nbsp;</td>
                 </tr>
             </table>
         </center>
