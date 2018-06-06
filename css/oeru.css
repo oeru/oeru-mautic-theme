@@ -105,3 +105,24 @@ h3 {
         padding-left: 0 !important;
     }
 }
+
+/*.mauticform-button-wrapper .btn, #mauticform_input_lida103getstartedleadcaptureform_submit {*/
+.mauticform-button-wrapper.cta .mauticform-button {
+    /*background-color: #FEDB6B;*/
+    background-color: #E37038;
+    color: #fff;
+    border-radius: 5px;
+    border: 0px;
+    padding: 10px;
+    box-shadow: 3px 3px 10px #555;
+}
+
+/*.mauticform-button-wrapper .btn:hover, #mauticform_input_lida103getstartedleadcaptureform_submit:hover {*/
+.mauticform-button-wrapper.cta .mauticform-button:hover {
+    color: #000 !important;
+    box-shadow: 5px 5px 10px #555 !important;
+}
+
+
+
+
